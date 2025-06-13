@@ -137,24 +137,12 @@ set_kernel_size
 echo "CONFIG_PACKAGE_opkg=y" >> ./.config
 echo "CONFIG_OPKG_USE_CURL=y" >> ./.config
 echo "# CONFIG_USE_APK is not set" >> ./.config
-# 强大的工具Lucky大吉(需要添加源或git clone)
-echo "CONFIG_PACKAGE_luci-app-lucky=y" >> ./.config
 # 网络通信工具
 echo "CONFIG_PACKAGE_curl=y" >> ./.config
 echo "CONFIG_PACKAGE_tcping=y" >> ./.config
 # 磁盘管理
-echo "CONFIG_PACKAGE_luci-app-diskman=y" >> ./.config
 echo "CONFIG_PACKAGE_cfdisk=y" >> ./.config
 # 大鹅
 echo "CONFIG_PACKAGE_luci-app-daed=y" >> ./.config
-# Git
-echo "CONFIG_PACKAGE_git-http=y" >> ./.config
 # Nginx替换Uhttpd
 echo "CONFIG_PACKAGE_nginx-mod-luci=y" >> ./.config
-# Nginx的图形化界面
-echo "CONFIG_PACKAGE_luci-app-nginx=y" >> ./.config
-# HAProxy 比Nginx更强大的反向代理服务器
-echo "CONFIG_PACKAGE_luci-app-haproxy-tcp=y" >> ./.config
-# istore界面
-echo "CONFIG_PACKAGE_luci-app-quickstart=y" >> ./.config
-
