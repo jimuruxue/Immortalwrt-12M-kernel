@@ -137,7 +137,7 @@ mkdir -p Package/libcron && wget -O Package/libcron/Makefile https://raw.githubu
 # # luci-app-daed-next
 # git clone https://github.com/sbwml/luci-app-daed-next package/daed-next
 
-git_sparse_clone main https://github.com/kenzok8/small-package luci-lib-taskd luci-lib-xterm taskd quickstart luci-app-quickstart
+git_sparse_clone main https://github.com/kenzok8/small-package luci-lib-taskd luci-lib-xterm taskd quickstart luci-app-store luci-app-quickstart
 
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-nginx
 
