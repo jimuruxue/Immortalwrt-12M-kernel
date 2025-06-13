@@ -146,3 +146,9 @@ echo "CONFIG_PACKAGE_cfdisk=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-daed=y" >> ./.config
 # Nginx替换Uhttpd
 echo "CONFIG_PACKAGE_nginx-mod-luci=y" >> ./.config
+# quickstart界面
+echo "CONFIG_PACKAGE_luci-lib-taskd=y" >> ./.config
+echo "CONFIG_PACKAGE_luci-lib-xterm=y" >> ./.config
+echo "CONFIG_PACKAGE_taskd=y" >> ./.config
+echo "CONFIG_PACKAGE_quickstart=y" >> ./.config
+echo "CONFIG_PACKAGE_luci-app-quickstart=y" >> ./.config
