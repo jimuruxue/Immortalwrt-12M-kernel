@@ -145,6 +145,17 @@ wget "https://alist4.lovelyy.eu.org/d/CloudFlareR2/immortalwrt/nginx/ngnx.conf?s
 echo 检测一下nginx的配置文件
 # cat ../feeds/packages/net/nginx-util/files/nginx.config
 
+fix_quickstart() {
+    local qs_index_path="$BUILD_DIR/package/luci-app-quickstart/htdocs/luci-static/quickstart/index.js"
+    local fix_path="$BASE_PATH/patches/quickstart_index.js"
+    if [ -f "$qs_index_path" ] && [ -f "$fix_path" ]; then
+        cat "$fix_path" >"$qs_index_path"
+        echo "Quickstart index.js 已被修复。"
+    else
+        echo "Quickstart index.js 或补丁文件不存在，请检查路径是否正确。"
+    fi
+}
+
 fix_default_set() {
     # install -Dm755 "$BASE_PATH/patches/990_set_argon_primary" "$BUILD_DIR/package/base-files/files/etc/uci-defaults/990_set_argon_primary"
     # install -Dm755 "$BASE_PATH/patches/991_custom_settings" "$BUILD_DIR/package/base-files/files/etc/uci-defaults/991_custom_settings"
